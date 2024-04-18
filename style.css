@@ -8,5 +8,14 @@ body {
 
 .loginBox {
     background-color: #e6e8eb;
+    max-width: 500px;
     padding: 20px;
+    width: 100%;
+}
+
+.input {
+    display: block;
+    margin-bottom: 20px;
+    padding: 12px; 
+    width: 100%;
 }
