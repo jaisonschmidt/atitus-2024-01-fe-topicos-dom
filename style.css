@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     align-items: center;
     display: flex;
@@ -16,6 +20,7 @@ body {
 .input {
     display: block;
     margin-bottom: 20px;
+    margin-top: 10px;
     padding: 12px; 
     width: 100%;
 }
