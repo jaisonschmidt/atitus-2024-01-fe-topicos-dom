@@ -10,13 +10,6 @@ function validateEmail(email) { // email é uma string, exemplo eu@jaison.com.br
         return false;
     }
 
-    // validar se arroba[1] possui exatamente 1 simbolo de ponto e ao menos 3 caracteres
-    const ponto = arroba[1].split('.'); // j.c -> ['j', 'c']
-
-    if (ponto.length < 2 || ponto[0] == '' || ponto[1] == '') {
-        return false;
-    }
-
     return true;
 }
 
@@ -29,6 +22,6 @@ txtEmail.addEventListener('blur', function(){
 
     // Caso o usuario nao digite nada mostrar uma mensagem de campo obrigatório
     if (!validateEmail(txtEmail.value.trim())) {
-        console.log('E-mail invalido');
+        txtEmail.classList.add('error');
     }
 });

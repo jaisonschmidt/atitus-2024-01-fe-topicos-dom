@@ -24,3 +24,7 @@ body {
     padding: 12px; 
     width: 100%;
 }
+
+.input.error {
+    border: 2px solid red;
+}
