@@ -2,15 +2,9 @@ const txtEmail = document.getElementById('txtEmail');
 
 // se retornar true, é um email valido
 // se retornar false, é um email invalido
-function validateEmail(email) { // email é uma string, exemplo eu@jaison.com.br
-    // verificar se o email possui exatamente 1 simbolo de arroba
-    const arroba = email.split('@');
-    
-    if (arroba.length !== 2 || arroba[0] == '' || arroba[1] == '') {
-        return false;
-    }
-
-    return true;
+function validateEmail(email) {
+    const re = /\S+@\S+\.\S+/;
+    return re.test(email);
 }
 
 txtEmail.addEventListener('focus', function(){
