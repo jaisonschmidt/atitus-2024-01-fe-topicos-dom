@@ -28,3 +28,7 @@ body {
 .input.error {
     border: 2px solid red;
 }
+
+.input.success {
+    border: 2px solid green;
+}

@@ -16,6 +16,10 @@ txtEmail.addEventListener('blur', function(){
 
     // Caso o usuario nao digite nada mostrar uma mensagem de campo obrigatório
     if (!validateEmail(txtEmail.value.trim())) {
+        txtEmail.classList.remove('success');
         txtEmail.classList.add('error');
+    } else {
+        txtEmail.classList.remove('error');
+        txtEmail.classList.add('success');
     }
 });
